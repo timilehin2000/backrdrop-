@@ -23,7 +23,13 @@ const createNewUser = async (email, name, password) => {
 };
 
 const updateUser = async (email, updateData) => {
-    return await User.update(updateData, { where: { email } });
+    const result = await User.update(updateData, {
+        where: { email },
+        returning: true,
+        plain: true,
+    });
+
+    return result[1];
 };
 
 const findUserByAccountNumber = async (accountNumber) => {

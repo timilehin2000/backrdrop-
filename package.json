@@ -6,7 +6,11 @@
   "scripts": {
     "start": "set NODE_ENV=development&&node src/app.js",
     "dev": "set NODE_ENV=production&&nodemon src/app.js",
-    "db:migrate": "npx sequelize-cli db:migrate --config=./src/config/db.config.js --migrations-path=./src/migrations"
+    "db:migrate": "npx sequelize-cli db:migrate --config=./src/config/db.config.js --migrations-path=./src/migrations",
+    "test": "jest --watchAll --verbose --coverage"
+  },
+  "jest": {
+    "collectCoverage": true
   },
   "keywords": [],
   "author": "",
@@ -32,6 +36,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.0",
     "jest": "^29.5.0",
     "sequelize-cli": "^6.6.0"
   }

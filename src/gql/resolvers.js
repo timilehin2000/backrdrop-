@@ -62,6 +62,7 @@ const resolvers = {
                     hashedPassword
                 );
 
+                console.log(newUser);
                 if (newUser) {
                     return newUser;
                 } else {
