@@ -25,6 +25,10 @@ $ npm install
 $ npm run dev
 ```
 
+## Running test
+
+npm run test
+
 ## What's a good reason why the pure Levenshtein Distance algorithm might be a more effective solution than the broader Damerau–Levenshtein Distance algorithm in this specific scenario.
 
 The pure Levenshtein Distance algorithm is a more effective solution than the broader Damerau-Levenshtein Distance Algorithm. One major reason is because the PLDA only has three possible edit operations which are insertion, substitution and deletion which make it's operation simpler and less ambigious computationally compared to the BDLA which makes use of transposition (the operation of swapping two adjacent characters in a string to make it match the target string). Considering that bank accounts name are not necessarily long characters of strings, tansposition errors are less likely to occur compared to deletion, insertion, or substitution errors. Thus the PLDA, which is simpler and more efficient, may be a more effective solution for verifying bank account names in this specific scenario.

@@ -5,7 +5,7 @@ const {
     hashPassword,
     resolveUserAccount,
     toTitleCase,
-} = require("../helpers/utils/utils");
+} = require("../helpers/utils/util");
 const {
     createNewUser,
     findUserByEmail,
@@ -62,7 +62,6 @@ const resolvers = {
                     hashedPassword
                 );
 
-                console.log(newUser);
                 if (newUser) {
                     return newUser;
                 } else {
