@@ -5,7 +5,7 @@ This project is a backend challenge for Backdrop
 ## Prerequisites
 
 1. You need to have [Node.js](https://nodejs.org/en/download)
-2.
+2. You need to have PostgresSQL installed
 
 # Running this app
 
