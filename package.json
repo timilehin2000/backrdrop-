@@ -6,7 +6,6 @@
   "scripts": {
     "start": "set NODE_ENV=development&&node ./src/app.js",
     "dev": "set NODE_ENV=production&&nodemon ./src/app.js",
-    "db:migrate": "npx sequelize-cli db:migrate --config=./src/config/db.config.js --migrations-path=./src/migrations",
     "test": "jest --watchAll --verbose --coverage"
   },
   "jest": {
