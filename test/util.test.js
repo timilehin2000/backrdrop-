@@ -6,7 +6,7 @@ const {
     generateToken,
     hashPassword,
     resolveUserAccount,
-} = require("../src/helpers/utils/utils");
+} = require("../src/helpers/utils/util");
 
 describe("Utility functions testing", () => {
     test("convert string to title case", () => {
